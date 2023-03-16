@@ -6,20 +6,32 @@ body {
 
 nav {
   background-color: #333;
+  color: white;
+  height: 50px;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 
-nav a {
+nav li {
   float: left;
+}
+
+nav li a {
+  display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px;
   text-decoration: none;
 }
 
-nav a:hover {
-  background-color: #ddd;
-  color: black;
+nav li a:hover {
+  background-color: #4CAF50;
 }
 
 .demo-button {
@@ -44,3 +56,103 @@ nav a:hover {
   white-space: pre-wrap;
   word-break: break-all;
 }
+
+/*.hero {
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}*/
+/*footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}*/
+.background-overlay {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      nav li {
+        float: left;
+      }
+
+      nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      nav li a:hover {
+        background-color: #111;
+      }
+
+      .hero {
+        padding: 100px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .about {
+        padding: 50px;
+        background-color: #f1f1f1;
+        color: #333;
+      }
+
+      .contact {
+        padding: 50px;
+        background-color: #333;
+        color: #fff;
+        margin-bottom: 60px; /* equal to height of footer */
+      }
+
+      .footer {
+        position: relative;
+        width: 100%;
+        background-color: #1c1c1c;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        }

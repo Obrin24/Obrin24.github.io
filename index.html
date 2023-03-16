@@ -1,11 +1,59 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="designs.css">
+    <script src="javascript.js"></script>
     <title>My Programming Projects</title>
+    <style>
+/*      .background {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #191919;
+        background-image: linear-gradient(to bottom, #191919, #1c1c1c, #1f1f1f, #222222, #262626, #2b2b2b, #303030, #363636, #3d3d3d, #454545, #4e4e4e, #585858);
+        animation: gradient 30s ease infinite;
+        z-index: -1;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #1c1c1c;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }*/
+    </style>
   </head>
   <body>
+    <div class="background"></div>
+    <script>
+      const backgroundDiv = document.querySelector(".background");
+      backgroundDiv.addEventListener("mouseenter", () => {
+        backgroundDiv.style.backgroundColor = "red";
+      });
+      backgroundDiv.addEventListener("mouseleave", () => {
+        backgroundDiv.style.backgroundColor = "#191919";
+      });
+      backgroundDiv.addEventListener("click", () => {
+        backgroundDiv.style.backgroundColor = "blue";
+      });
+    </script>
     <header>
       <nav>
         <ul>
@@ -17,9 +65,102 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Welcome to My Programming Projects</h1>
-      <p>On this website, you can find a collection of programming projects I have created in various languages. Please select a language from the navigation bar above to view the projects.</p>
-    </main>
+    <div class="hero">
+      <h1>Programming Portfolio</h1>
+      <p>Welcome to my programming portfolio, where I showcase my projects in various programming languages. Click on a language in the navigation bar to see my projects.</p>
+    </div>
+    <div class="about">
+      <h2>About Me</h2>
+      <p>My name is [Your Name], and I am a [Your Title] with a passion for programming. I specialize in [Your Specialization], and have experience with [Other Skills].</p>
+      <p>When I'm not coding, I enjoy [Your Hobbies].</p>
+    </div>
+    <div class="contact">
+      <h2>Contact Me</h2>
+      <p>If you're interested in working with me or
+ have any questions, please don't hesitate to get in touch:</p>
+      <ul>
+        <li>Email: [Your Email]</li>
+        <li>Phone: [Your Phone Number]</li>
+        <li>LinkedIn: [Your LinkedIn Profile Link]</li>
+        <li>Github: [Your Github Profile Link]</li>
+      </ul>
+    </div>
+  <footer>
+    <p>© 2023 My Programming Projects. All rights reserved.</p>
+  </footer>
   </body>
 </html>
+ -->
+
+ <!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="designs.css">
+    <script src="javascript.js"></script>
+    <title>My Programming Projects</title>
+    <style>
+      body {
+        background: url('background.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-bottom: 60px;
+      }
+
+      
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        header {
+          position: relative;
+        }
+
+        nav li {
+          float: none;
+          display: inline;
+        }
+
+        nav li a {
+          display: block;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="python.html">Python</a></li>
+          <li><a href="r.html">R</a></li>
+          <li><a href="haskell.html">Haskell</a></li>
+          <li><a href="java.html">Java</a></li>
+          <li><a href="sql.html">SQL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero">
+      <h1>Programming Portfolio</h1>
+      <p>Welcome to my programming portfolio, where I showcase my projects in various programming languages. Click on a language in the navigation bar to see my projects.</p>
+    </div>
+    <div class="about">
+      <h2>About Me</h2>
+      <p>My name is Gabriel Johnson, and I am a Undergraduate Student at Illinois Institute of Technology with a passion for programming. I specialize in Artificial Intelligence and Data Mining and enjoy developing innovative solutions to complex problems. My programming journey began [Your Story] and I have since worked on various projects, both personal and professional, that have helped me hone my skills. When I'm not coding, you can find me [Your Hobby].</p>
+</div>
+<div class="contact">
+<h2>Contact Me</h2>
+<p>Want to work together or have a question? Feel free to contact me at [Your Email] or connect with me on [Your Social Media Handles].</p>
+</div>
+<footer>
+<p>© 2023 My Programming Projects</p>
+</footer>
+
+  </body>
+</html>
+
+
+
