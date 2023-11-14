@@ -1,166 +1,79 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="designs.css">
-    <script src="javascript.js"></script>
-    <title>My Programming Projects</title>
-    <style>
-/*      .background {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #191919;
-        background-image: linear-gradient(to bottom, #191919, #1c1c1c, #1f1f1f, #222222, #262626, #2b2b2b, #303030, #363636, #3d3d3d, #454545, #4e4e4e, #585858);
-        animation: gradient 30s ease infinite;
-        z-index: -1;
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
+  <title>Gabriel Johnson - Portfolio</title>
+  <link rel="stylesheet" href="designs.css"> <!-- Link to your CSS file -->
+</head>
+<body>
 
-      .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background-color: #1c1c1c;
-        color: white;
-        text-align: center;
-        padding: 20px;
-      }*/
-    </style>
-  </head>
-  <body>
-    <div class="background"></div>
-    <script>
-      const backgroundDiv = document.querySelector(".background");
-      backgroundDiv.addEventListener("mouseenter", () => {
-        backgroundDiv.style.backgroundColor = "red";
-      });
-      backgroundDiv.addEventListener("mouseleave", () => {
-        backgroundDiv.style.backgroundColor = "#191919";
-      });
-      backgroundDiv.addEventListener("click", () => {
-        backgroundDiv.style.backgroundColor = "blue";
-      });
-    </script>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="python.html">Python</a></li>
-          <li><a href="r.html">R</a></li>
-          <li><a href="haskell.html">Haskell</a></li>
-          <li><a href="java.html">Java</a></li>
-          <li><a href="sql.html">SQL</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="hero">
-      <h1>Programming Portfolio</h1>
-      <p>Welcome to my programming portfolio, where I showcase my projects in various programming languages. Click on a language in the navigation bar to see my projects.</p>
-    </div>
-    <div class="about">
-      <h2>About Me</h2>
-      <p>My name is [Your Name], and I am a [Your Title] with a passion for programming. I specialize in [Your Specialization], and have experience with [Other Skills].</p>
-      <p>When I'm not coding, I enjoy [Your Hobbies].</p>
-    </div>
-    <div class="contact">
-      <h2>Contact Me</h2>
-      <p>If you're interested in working with me or
- have any questions, please don't hesitate to get in touch:</p>
-      <ul>
-        <li>Email: [Your Email]</li>
-        <li>Phone: [Your Phone Number]</li>
-        <li>LinkedIn: [Your LinkedIn Profile Link]</li>
-        <li>Github: [Your Github Profile Link]</li>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo"><a href="#home">Gabriel Johnson</a></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Gabriel Johnson</h1>
+        <p>Passionate Developer | Tech Enthusiast</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <!-- Project Cards (Replace with your actual projects) -->
+        <div class="project-card">
+          <h3>Tumor Classification</h3>
+          <p>Description of the tumor classification project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="project_tumor_classification.html" class="project-button">View Project</a>
+        </div>
+        <!-- Add more project cards -->
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I am a passionate developer with a strong interest in technology...</p>
+        <!-- Add your skills, achievements, and bio -->
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- Footer Section -->
   <footer>
-    <p>© 2023 My Programming Projects. All rights reserved.</p>
-  </footer>
-  </body>
-</html>
- -->
-
- <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="designs.css">
-    <script src="javascript.js"></script>
-    <title>My Programming Projects</title>
-    <style>
-      body {
-        background: url('background.jpg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding-bottom: 60px;
-      }
-
-      
-
-      @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        header {
-          position: relative;
-        }
-
-        nav li {
-          float: none;
-          display: inline;
-        }
-
-        nav li a {
-          display: block;
-          text-align: left;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="background-overlay"></div>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="python.html">Python</a></li>
-          <li><a href="r.html">R</a></li>
-          <li><a href="haskell.html">Haskell</a></li>
-          <li><a href="java.html">Java</a></li>
-          <li><a href="sql.html">SQL</a></li>
+    <div class="container">
+      <!-- Other footer content -->
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li><a href="https://www.linkedin.com/in/gabriel-johnson-b96a0a141/" target="_blank">LinkedIn Profile</a></li>
+          <li><a href="https://github.com/Obrin24" target="_blank">GitHub Profile</a></li>
+          <li>Email: gjohnsonjan2002@gmail.com</li>
+          <li>Phone: +1-224-388-8614</li>
         </ul>
-      </nav>
-    </header>
-    <div class="hero">
-      <h1>Programming Portfolio</h1>
-      <p>Welcome to my programming portfolio, where I showcase my projects in various programming languages. Click on a language in the navigation bar to see my projects.</p>
+      </section>
+      <p class="footer-text">&copy; 2023 Gabriel Johnson. All rights reserved.</p>
     </div>
-    <div class="about">
-      <h2>About Me</h2>
-      <p>My name is Gabriel Johnson, and I am a Undergraduate Student at Illinois Institute of Technology with a passion for programming. I specialize in Artificial Intelligence and Data Mining and enjoy developing innovative solutions to complex problems. My programming journey began [Your Story] and I have since worked on various projects, both personal and professional, that have helped me hone my skills. When I'm not coding, you can find me [Your Hobby].</p>
-</div>
-<div class="contact">
-<h2>Contact Me</h2>
-<p>Want to work together or have a question? Feel free to contact me at [Your Email] or connect with me on [Your Social Media Handles].</p>
-</div>
-<footer>
-<p>© 2023 My Programming Projects</p>
-</footer>
-
-  </body>
+  </footer>
+</body>
 </html>
-
-
-
