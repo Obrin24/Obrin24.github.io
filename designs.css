@@ -115,10 +115,6 @@ main {
   background-color: #555;
 }
 
-/* Styles for about section */
-.about {
-  padding: 50px 0;
-}
 
 /* Styles for contact section */
 .contact {
@@ -157,4 +153,148 @@ footer {
   margin-top: 5px;
   font-size: 14px; /* Adjust footer text size */
   color: #555; /* Adjust footer text color */
+}
+
+/* Specific styles for project details */
+.project-details {
+  background-color: #f9f9f9; /* Updated background color */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px; /* Adding margin at the bottom */
+}
+
+.project-details h2 {
+  color: #2c3e50; /* Updated heading color */
+  margin-bottom: 20px;
+}
+
+.project-details h3 {
+  color: #2980b9; /* Updated sub-heading color */
+  margin-top: 20px;
+}
+
+.project-details ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.project-details li {
+  margin-bottom: 5px;
+}
+
+.project-details p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.project-details a {
+  color: #3498db; /* Updated link color */
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+.about-me {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-me h2 {
+  color: #007bff;
+}
+
+.about-me p {
+  margin-bottom: 20px;
+}
+
+/* Styles for contact-info section */
+.contact-info {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: #009688;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+/* ... (Previous styles) ... */
+
+/* ... (Previous styles) ... */
+
+/* Updated styles for about-section */
+.about {
+  padding: 50px 0;
+}
+
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-card {
+  width: 45%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-card h2,
+.about-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #009688;
+}
+
+.about-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-card p {
+  color: #666;
+}
+
+
+
+/* ... (Previous styles) ... */
+
+/* Styles for about-main section on main page */
+.about-main {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.about-main h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-main p {
+  color: #666;
 }

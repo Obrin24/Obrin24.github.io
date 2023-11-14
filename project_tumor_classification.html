@@ -2,38 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tumor Classification Project</title>
   <link rel="stylesheet" href="designs.css"> <!-- Link to your CSS file -->
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation Bar (if used on individual project pages) -->
   <nav class="navbar">
     <div class="container">
-      <h1 class="logo"><a href="#home">Gabriel Johnson</a></h1>
+      <h1 class="logo"><a href="index.html">Gabriel Johnson</a></h1>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Project Details -->
-  <main class="container">
-    <section class="project-details">
-      <h2>Tumor Classification</h2>
-      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut gravida tellus in libero tristique.</p>
-      <!-- Add more project details -->
-    </section>
+  <!-- Main Content -->
+  <main class="container project-details">
+    <h2>Tumor Classification Project</h2>
+    <p>This project aimed to classify tumors using machine learning algorithms based on medical imaging data.</p>
+
+    <h3>Key Features:</h3>
+    <ul>
+      <li>Utilized deep learning models for image recognition and classification.</li>
+      <li>Trained on a large dataset of medical images to distinguish between benign and malignant tumors.</li>
+      <li>Implemented a user-friendly interface for uploading images and obtaining classification results.</li>
+    </ul>
+
+    <h3>Technologies Used:</h3>
+    <ul>
+      <li>Python</li>
+      <li>TensorFlow</li>
+      <li>Keras</li>
+      <li>Medical Imaging Libraries (e.g., DICOM, OpenCV)</li>
+    </ul>
+
+    <h3>Challenges and Solutions:</h3>
+    <p>One major challenge was handling the complexities of medical imaging data and ensuring robust model performance. This was addressed by preprocessing techniques and fine-tuning the neural network architectures.</p>
+
+    <h3>Outcome:</h3>
+    <p>The project achieved an accuracy rate of 90%+ in classifying tumors, demonstrating its potential for assisting medical professionals in diagnosis.</p>
+
+    <h3>Code Repository:</h3>
+    <p>Find the code on <a href="https://github.com/your-username/tumor-classification" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+
+    <h3>Demo:</h3>
+    <p>Check out the live demo soon!</p>
   </main>
 
-  <!-- Footer Section -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 Gabriel Johnson. All rights reserved.</p>
+      <!-- Other footer content -->
+      <section id="contact" class="contact">
+        <h2>Contact Me:</h2>
+        <ul class="contact-list">
+          <li><a href="https://www.linkedin.com/in/gabriel-johnson-b96a0a141/" target="_blank">LinkedIn Profile</a></li>
+          <li><a href="https://github.com/Obrin24" target="_blank">GitHub Profile</a></li>
+          <li>Email: gjohnsonjan2002@gmail.com</li>
+          <li>Phone: +1-224-388-8614</li>
+        </ul>
+      </section>
+      <p class="footer-text">&copy; 2023 Gabriel Johnson. All rights reserved.</p>
     </div>
   </footer>
 
