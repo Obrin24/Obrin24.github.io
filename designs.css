@@ -79,7 +79,7 @@ main {
 }
 
 .project-card {
-  flex: 1 1 calc(30% - 20px); /* Adjust width and margins as needed */
+  flex: 1 1 calc(30% - 20px);
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -101,29 +101,73 @@ main {
   color: #666;
 }
 
-.project-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.project-button:hover {
-  background-color: #555;
-}
-
-
 /* Styles for contact section */
-.contact {
-  background-color: #333;
-  color: #fff;
-  padding: 50px 0;
-  text-align: center;
+.contact-details {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
+.contact-details h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.contact-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+.contact-card p {
+  color: #666;
+}
+
+.contact-social {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-social h2 {
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+}
 /* Styles for footer section */
 footer {
   background-color: #333;
@@ -132,7 +176,7 @@ footer {
   padding: 20px 0;
   width: 100%;
 }
-/* Styles to improve link readability and footer size */
+
 /* Styles for improving link readability and footer size */
 .contact-list {
   list-style: none;
@@ -144,34 +188,34 @@ footer {
 }
 
 .contact-list a {
-  color: #0366d6; /* Adjust link color */
+  color: #0366d6;
   text-decoration: underline;
   font-weight: bold;
 }
 
 .footer-text {
   margin-top: 5px;
-  font-size: 14px; /* Adjust footer text size */
-  color: #555; /* Adjust footer text color */
+  font-size: 14px;
+  color: #555;
 }
 
 /* Specific styles for project details */
 .project-details {
-  background-color: #f9f9f9; /* Updated background color */
+  background-color: #f9f9f9;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
   margin-top: 20px;
-  margin-bottom: 30px; /* Adding margin at the bottom */
+  margin-bottom: 30px;
 }
 
 .project-details h2 {
-  color: #2c3e50; /* Updated heading color */
+  color: #2c3e50;
   margin-bottom: 20px;
 }
 
 .project-details h3 {
-  color: #2980b9; /* Updated sub-heading color */
+  color: #2980b9;
   margin-top: 20px;
 }
 
@@ -190,49 +234,12 @@ footer {
 }
 
 .project-details a {
-  color: #3498db; /* Updated link color */
+  color: #3498db;
 }
 
 .project-details a:hover {
   text-decoration: underline;
 }
-.about-me {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.about-me h2 {
-  color: #007bff;
-}
-
-.about-me p {
-  margin-bottom: 20px;
-}
-
-/* Styles for contact-info section */
-.contact-info {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.contact-info h2 {
-  color: #009688;
-}
-
-.contact-info p {
-  margin-bottom: 15px;
-}
-
-.contact-info a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-
 
 /* Updated styles for about-section */
 .about {
