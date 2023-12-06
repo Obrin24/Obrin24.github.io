@@ -54,10 +54,13 @@ main {
   text-decoration: none;
   transition: color 0.3s ease; /* Adding transition effect */
   font-size: 1.1em; /* Increased font size */
+  padding: 8px 12px; /* Increased padding */
+  border-radius: 5px; /* Rounded corners */
 }
 
 .nav-links li a:hover {
   color: #ffd700; /* Changing color on hover */
+  background-color: #444; /* Darker background on hover */
 }
 
 /* Styles for hero section */
