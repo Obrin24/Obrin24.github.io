@@ -28,7 +28,7 @@ main {
 .navbar {
   background-color: #1e1e1e; /* Darker background color */
   color: #fff;
-  padding: 10px 0; /* Reduced padding */
+  padding: 15px 0; /* Increased padding */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
   transition: background-color 0.3s ease; /* Adding transition effect */
 }
@@ -42,17 +42,18 @@ main {
 .nav-links {
   list-style: none;
   display: flex;
-  margin-right: 20px; /* Adjusted margin */
+  margin-right: 30px; /* Adjusted margin */
 }
 
 .nav-links li {
-  margin-right: 15px; /* Reduced margin */
+  margin-right: 20px; /* Adjusted margin */
 }
 
 .nav-links li a {
   color: #ddd; /* Slightly lighter text color */
   text-decoration: none;
   transition: color 0.3s ease; /* Adding transition effect */
+  font-size: 1.1em; /* Increased font size */
 }
 
 .nav-links li a:hover {
@@ -70,28 +71,81 @@ main {
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 3.3em;
   margin-bottom: 10px;
 }
 
-.projects {
-  padding: 50px 0;
-  text-align: center;
+.hero p {
+  font-size: 2.0em;
 }
 
-.project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.projects_main {
+  padding: 50px 20px;
+}
+
+.projects_main h2 {
+  color: #2c3e50;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.project-card_main {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card_main:hover {
+  transform: translateY(-5px);
+}
+
+.project-card_main h3 {
+  color: #2980b9;
+  font-size: 1.0em;
+  margin-bottom: 10px;
+}
+
+.project-card_main p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.project-card_main .project-card_main {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-card_main .project-card_main:hover {
+  background-color: #2471a3;
+}
+
+
+/* Styles for Projects page */
+.projects-container {
+  padding: 50px 20px;
+}
+
+.projects h2 {
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 30px;
 }
 
 .project-card {
-  flex: 1 1 calc(30% - 20px);
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -100,15 +154,53 @@ main {
 }
 
 .project-card h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  color: #2980b9;
+  font-size: 1.8em;
+  margin-bottom: 15px;
 }
 
 .project-card p {
   color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-/* Styles for contact section */
+.project-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-button:hover {
+  background-color: #2471a3;
+}
+
+.projects-message {
+  text-align: center; /* Center align the message */
+  margin-top: 40px; /* Adjust margin for spacing */
+}
+
+.projects-message h3 {
+  font-size: 24px; /* Increase font size */
+  color: #333; /* Change text color */
+  margin-bottom: 20px; /* Adjust bottom margin */
+}
+
+.projects-link {
+  color: #009688;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  font-weight: bold; /* Make the link bold */
+}
+
+.projects-link:hover {
+  color: #00665f;
+}
+
 /* Styles for contact section */
 .contact-details,
 .contact-social {
@@ -258,6 +350,16 @@ footer {
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect */
+.about-content:hover,
+.skills-content:hover,
+.passion-content:hover,
+.education-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Headings */
@@ -265,9 +367,11 @@ footer {
 .skills-content h2,
 .passion-content h2,
 .education-content h2 {
-  font-size: 2em;
+  font-size: 2.0em;
   margin-bottom: 15px;
   color: #009688;
+  border-bottom: 2px solid #009688;
+  padding-bottom: 10px;
 }
 
 /* Text Content */
@@ -286,33 +390,39 @@ footer {
 }
 
 .skills-content li {
-  font-size: 1.1em;
+  font-size: 1.0em;
   color: #444;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   position: relative;
+  line-height: 1.5;
+  padding-left: 30px; /* Increased padding for better spacing */
 }
 
 .skills-content li:before {
   content: '\2022';
   position: absolute;
-  left: -20px;
+  left: 0;
   color: #009688;
+  font-size: 1.0em; /* Adjust the bullet size */
+  line-height: inherit; /* Ensure consistent line height */
+  top: 0; /* Adjust vertical alignment */
 }
 
 /* Skill Meter */
 .skill-meter {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .skill-meter-title {
   flex: 1;
+  font-weight: bold;
 }
 
 .skill-meter-bar {
   flex: 4;
-  height: 10px;
+  height: 8px;
   background-color: #ddd;
   border-radius: 5px;
   margin: 0 10px;
@@ -331,9 +441,15 @@ footer {
 .skill-meter-rating {
   flex: 1;
   text-align: right;
+  font-weight: bold;
 }
 
 /* Education Section */
+.education-list {
+  list-style: none; /* Removes default list styling */
+  padding: 0;
+  margin: 0;
+}
 .education-item {
   border-left: 3px solid #009688;
   padding-left: 15px;
@@ -341,30 +457,37 @@ footer {
 }
 
 .education-title {
-  font-size: 1.3em;
+  font-size: 1.0em;
   margin-bottom: 8px;
   color: #333;
+  font-weight: bold;
 }
 
 .education-details {
-  font-size: 1em;
+  font-size: 1.0em;
   color: #555;
+  line-height: 1.5;
+  padding-left: 20px; /* Adjusted padding for better spacing */
 }
-/* Styles for about-main section on main page */
+/* Styles for About Me section */
 .about-main {
-  padding: 50px 0;
-  text-align: center;
+  padding: 50px 20px;
   background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 20px;
+}
+
+.about-main .container {
+  text-align: center;
 }
 
 .about-main h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 30px;
 }
 
 .about-main p {
   color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
+
