@@ -24,11 +24,13 @@ main {
   padding: 20px;
 }
 
-/* Styles for navigation bar */
+/* Updated styles for navbar */
 .navbar {
-  background-color: #333;
+  background-color: #1e1e1e; /* Darker background color */
   color: #fff;
-  padding: 15px 0;
+  padding: 10px 0; /* Reduced padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+  transition: background-color 0.3s ease; /* Adding transition effect */
 }
 
 .navbar .container {
@@ -40,26 +42,31 @@ main {
 .nav-links {
   list-style: none;
   display: flex;
+  margin-right: 20px; /* Adjusted margin */
 }
 
 .nav-links li {
-  margin-right: 20px;
+  margin-right: 15px; /* Reduced margin */
 }
 
 .nav-links li a {
-  color: #fff;
+  color: #ddd; /* Slightly lighter text color */
   text-decoration: none;
+  transition: color 0.3s ease; /* Adding transition effect */
 }
 
 .nav-links li a:hover {
-  color: #ffd700;
+  color: #ffd700; /* Changing color on hover */
 }
 
 /* Styles for hero section */
 .hero {
-  background-color: #f4f4f4;
+  background-image: url('assets/neural_network.png'); /* Set the background image */
+  background-size: cover; /* Adjusts the background image to cover the entire section */
+  background-position: center; /* Centers the background image */
   text-align: center;
   padding: 100px 0;
+  color: #ffffff; /* Example text color */
 }
 
 .hero h1 {
@@ -102,30 +109,35 @@ main {
 }
 
 /* Styles for contact section */
-.contact-details {
+/* Styles for contact section */
+.contact-details,
+.contact-social {
   background-color: #f9f9f9;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 20px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.contact-details h2 {
+.contact-details h2,
+.contact-social h2 {
   color: #2c3e50;
   margin-bottom: 20px;
 }
 
-.contact-card {
+.contact-card,
+.social-links a {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out;
 }
 
-.contact-card:hover {
+.contact-card:hover,
+.social-links a:hover {
   transform: translateY(-5px);
 }
 
@@ -137,15 +149,6 @@ main {
 
 .contact-card p {
   color: #666;
-}
-
-.contact-social {
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .contact-social h2 {
@@ -241,47 +244,112 @@ footer {
   text-decoration: underline;
 }
 
-/* Updated styles for about-section */
-.about {
-  padding: 50px 0;
+.main-content {
+  padding: 20px;
 }
 
-.about .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.about-card {
-  width: 45%;
+/* Content Sections */
+.about-content,
+.skills-content,
+.passion-content,
+.education-content {
   background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
-  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-card:hover {
-  transform: translateY(-5px);
-}
-
-.about-card h2,
-.about-card h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+/* Headings */
+.about-content h2,
+.skills-content h2,
+.passion-content h2,
+.education-content h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
   color: #009688;
 }
 
-.about-card ul {
-  list-style-type: disc;
-  padding-left: 20px;
+/* Text Content */
+.about-content p,
+.passion-content p,
+.education-content p {
+  color: #333;
+  line-height: 1.6;
 }
 
-.about-card p {
-  color: #666;
+/* Skills List */
+.skills-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+.skills-content li {
+  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.skills-content li:before {
+  content: '\2022';
+  position: absolute;
+  left: -20px;
+  color: #009688;
+}
+
+/* Skill Meter */
+.skill-meter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-meter-title {
+  flex: 1;
+}
+
+.skill-meter-bar {
+  flex: 4;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.skill-meter-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #009688;
+}
+
+.skill-meter-rating {
+  flex: 1;
+  text-align: right;
+}
+
+/* Education Section */
+.education-item {
+  border-left: 3px solid #009688;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.education-title {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.education-details {
+  font-size: 1em;
+  color: #555;
+}
 /* Styles for about-main section on main page */
 .about-main {
   padding: 50px 0;
